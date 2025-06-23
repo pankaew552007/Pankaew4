@@ -1,0 +1,14 @@
+class Speaker:
+    def speak(self):
+        print("speak")
+
+class Walker:
+    def Walker(self):
+        print("Walker")
+    
+class Robot(Speaker, Walker):
+    pass
+
+r = Robot()
+r.speak()
+r.Walker()
