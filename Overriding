@@ -1,0 +1,16 @@
+class Employee:
+    def __init__ (self, name):
+        self.name = name
+
+    def show_info(self):
+        print("ปานแก้ว", self.name)
+
+class Manager(Employee):
+    def __init__ (self, name):
+        super().__init__(name)
+    
+    def show_info(self):
+        print("ผู้จัดการ", self.name)
+
+m = Manager("Somsri")
+m.show_info()
