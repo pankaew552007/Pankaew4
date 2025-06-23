@@ -1,0 +1,16 @@
+class ElectronicDevice:
+    def power_on(self):
+        print("power")
+        
+class Phone(ElectronicDevice):
+    def call(self):
+        print("call")
+       
+class Smartphone(Phone):
+    def install_app(self):
+        print("install_app")
+
+s = Smartphone()
+s.power_on()
+s.call()
+s.install_app()
